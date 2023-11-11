@@ -1,0 +1,13 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\hw_config.o"
+".\objects\melt_mt_10t7.o"
+".\objects\startup_mdr32f9qx.o"
+".\objects\system_mdr32f9qx.o"
+".\objects\mdr32f9qx_port.o"
+".\objects\mdr32f9qx_rst_clk.o"
+".\objects\mdr32f9qx_timer.o"
+--strict --scatter ".\Objects\MDR32_MELT16S2S.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\MDR32_MELT16S2S.map" -o .\Objects\MDR32_MELT16S2S.axf
