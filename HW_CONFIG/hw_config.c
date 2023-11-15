@@ -1,9 +1,10 @@
 #include "hw_config.h"
-void initTimer1CaptureModeWithETR(void) {
+void InitTimerETR(void) {
+		RST_CLK_PCLKcmd((RST_CLK_PCLK_RST_CLK),ENABLE);
+		RST_CLK_PCLKcmd((RST_CLK_PCLK_TIMER1), ENABLE);
     // Настройка структуры инициализации таймера
     TIMER_CntInitTypeDef timerInitStruct;
 
-    // Сначала инициализируем значения структуры вручную
     timerInitStruct.TIMER_IniCounter = 0;        // Начальное значение счетчика
     timerInitStruct.TIMER_Prescaler = 0;         // Предделитель (отсутствует)
     timerInitStruct.TIMER_Period = 0xFFFF;       // Максимальное значение периода
@@ -17,11 +18,9 @@ void initTimer1CaptureModeWithETR(void) {
     timerInitStruct.TIMER_ETR_FilterConf = TIMER_Filter_8FF_at_FTDS_div_32;  // Фильтр ETR с питанием от fdts и длиной событий 8
 		timerInitStruct.TIMER_ETR_Prescaler = TIMER_ETR_Prescaler_None;
 		timerInitStruct.TIMER_ETR_Polarity = TIMER_ETRPolarity_NonInverted;
-    // Настройка фильтра событий
     timerInitStruct.TIMER_FilterSampling = TIMER_FDTS_TIMER_CLK_div_4;  // Питание фильтра от частоты процессора 4
-    timerInitStruct.TIMER_ARR_UpdateMode = TIMER_ARR_Update_Immediately; // Обновление ARR сразу
+    timerInitStruct.TIMER_ARR_UpdateMode = TIMER_ARR_Update_Immediately; 
 
-    // Инициализация таймера 1
     TIMER_CntInit(MDR_TIMER1, &timerInitStruct);
 }
 void SysTickInit(void)

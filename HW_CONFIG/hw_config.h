@@ -29,5 +29,6 @@
 
 void SysTickInit(void);
 void PORTS_Init(void);
+void InitTimerETR(void);
 
 #endif

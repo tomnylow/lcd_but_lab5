@@ -33,6 +33,7 @@ uint16_t moving_average_filter(uint16_t* window, uint16_t newVal) {
 int main(void)
 {
 	SysTickInit();
+	InitTimerETR();
 	PORTS_Init();
 	Init_MT_10T7();
 	//writeNumberFloat(0, 10981.254);
