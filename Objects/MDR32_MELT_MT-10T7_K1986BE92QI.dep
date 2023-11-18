@@ -1,7 +1,7 @@
 Dependencies for Project 'MDR32_MELT_MT-10T7', Target 'K1986BE92QI': (DO NOT MODIFY !)
-F (.\App\main.c)(0x65524AA8)(--c99 -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\MDR_MELT_16S2S -I .\App -I .\HW_CONFIG -I .\MELT_MT-10T7-I.\RTE\Device\MDR1986BE92-I.\RTE\_K1986BE92QI-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="524" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (.\MELT_MT-10T7\melt_mt_10t7.h)(0x654F796D)
-I (.\HW_CONFIG\hw_config.h)(0x654F9FE7)
+F (.\App\main.c)(0x6558A788)(--c99 -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\MDR_MELT_16S2S -I .\App -I .\HW_CONFIG -I .\MELT_MT-10T7-I.\RTE\Device\MDR1986BE92-I.\RTE\_K1986BE92QI-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="524" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\MELT_MT-10T7\melt_mt_10t7.h)(0x654F796E)
+I (.\HW_CONFIG\hw_config.h)(0x6555F1BC)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\core_cm3.h)(0x58988FDA)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BC994)
@@ -15,8 +15,8 @@ I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driv
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h)(0x5C540C84)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x588BC994)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x588BC994)
-F (.\HW_CONFIG\hw_config.c)(0x654FC47A)(--c99 -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\MDR_MELT_16S2S -I .\App -I .\HW_CONFIG -I .\MELT_MT-10T7-I.\RTE\Device\MDR1986BE92-I.\RTE\_K1986BE92QI-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="524" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\hw_config.o --omf_browse .\objects\hw_config.crf --depend .\objects\hw_config.d)
-I (HW_CONFIG\hw_config.h)(0x654F9FE7)
+F (.\HW_CONFIG\hw_config.c)(0x6558A788)(--c99 -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\MDR_MELT_16S2S -I .\App -I .\HW_CONFIG -I .\MELT_MT-10T7-I.\RTE\Device\MDR1986BE92-I.\RTE\_K1986BE92QI-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="524" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\hw_config.o --omf_browse .\objects\hw_config.crf --depend .\objects\hw_config.d)
+I (HW_CONFIG\hw_config.h)(0x6555F1BC)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\core_cm3.h)(0x58988FDA)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BC994)
@@ -28,9 +28,9 @@ I (.\RTE\Device\MDR1986BE92\MDR32F9Qx_config.h)(0x5C540D10)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_lib.h)(0x5B067348)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h)(0x5B067368)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h)(0x5C540C84)
-F (.\MELT_MT-10T7\melt_mt_10t7.c)(0x654F863F)(--c99 -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\MDR_MELT_16S2S -I .\App -I .\HW_CONFIG -I .\MELT_MT-10T7-I.\RTE\Device\MDR1986BE92-I.\RTE\_K1986BE92QI-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="524" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\melt_mt_10t7.o --omf_browse .\objects\melt_mt_10t7.crf --depend .\objects\melt_mt_10t7.d)
-I (MELT_MT-10T7\melt_mt_10t7.h)(0x654F796D)
-I (.\HW_CONFIG\hw_config.h)(0x654F9FE7)
+F (.\MELT_MT-10T7\melt_mt_10t7.c)(0x654F8640)(--c99 -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\MDR_MELT_16S2S -I .\App -I .\HW_CONFIG -I .\MELT_MT-10T7-I.\RTE\Device\MDR1986BE92-I.\RTE\_K1986BE92QI-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="524" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\melt_mt_10t7.o --omf_browse .\objects\melt_mt_10t7.crf --depend .\objects\melt_mt_10t7.d)
+I (MELT_MT-10T7\melt_mt_10t7.h)(0x654F796E)
+I (.\HW_CONFIG\hw_config.h)(0x6555F1BC)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\core_cm3.h)(0x58988FDA)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BC994)

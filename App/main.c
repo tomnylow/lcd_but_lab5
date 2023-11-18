@@ -1,10 +1,9 @@
 #include "melt_mt_10t7.h"
-#define COUNT 1
+#define COUNT 0
 
 volatile int t = 0;
 
-volatile uint32_t delay_dec = 0;// объ€вление переменной delay_dec
-
+volatile uint32_t delay_dec = 0;
 void SysTick_Handler(void)
 {
 	if (delay_dec !=0) 
@@ -13,10 +12,10 @@ void SysTick_Handler(void)
 
 void delay_ms(uint32_t delay_ms)
 {
-	delay_dec = delay_ms;//присвоить delay_dec значение delay_ms
-	
-	while (delay_dec) {}; // выполн€ть функцию пока delay_dec не станет равным 0
-}
+	delay_dec = delay_ms;
+	while (delay_dec) {}; 
+	}
+
 uint16_t moving_average_filter(uint16_t* window, uint16_t newVal) {
     
 		static uint8_t i = 0;
@@ -33,11 +32,10 @@ uint16_t moving_average_filter(uint16_t* window, uint16_t newVal) {
 int main(void)
 {
 	SysTickInit();
-	InitTimerETR();
 	PORTS_Init();
+	Timer1_ETRinit();
 	Init_MT_10T7();
-	//writeNumberFloat(0, 10981.254);
-	uint16_t but_cnt = 0, prev_but_cnt = 0;
+	uint16_t but_cnt = 0;
 	uint16_t count_buff[15] = {0,};
 	
 	if (COUNT) {
@@ -51,10 +49,10 @@ int main(void)
 	while(1)
 	{
 		if (!COUNT){
-			prev_but_cnt = TIMER_GetCounter(MDR_TIMER1);
-			delay_ms(1000);
+			TIMER_SetCounter(MDR_TIMER1, 0);
+			delay_ms(1050);
 			but_cnt = TIMER_GetCounter(MDR_TIMER1);
-			writeNumber(0, moving_average_filter(count_buff, but_cnt - prev_but_cnt));
+			writeNumber(0, moving_average_filter(count_buff, but_cnt));
 		}	
 		//CLEAR_LCD_MELT();
 		

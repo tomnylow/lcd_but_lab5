@@ -22,15 +22,27 @@ Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
 C:\Users\YkUk\Documents\lcd_but_lab4\MDR32_MELT_MT-10T7.uvprojx
-Project File Date:  11/11/2023
+Project File Date:  11/18/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
-Build target 'K1986BE92QI'
+Rebuild target 'K1986BE92QI'
+assembling startup_MDR32F9Qx.s...
+compiling system_MDR32F9Qx.c...
+compiling hw_config.c...
 compiling main.c...
+App\main.c(39): warning:  #177-D: variable "prev_but_cnt"  was declared but never referenced
+  	uint16_t but_cnt = 0, prev_but_cnt = 0;
+App\main.c(40): warning:  #177-D: variable "count_buff"  was declared but never referenced
+  	uint16_t count_buff[15] = {0,};
+App\main.c: 2 warnings, 0 errors
+compiling melt_mt_10t7.c...
+compiling MDR32F9Qx_port.c...
+compiling MDR32F9Qx_rst_clk.c...
+compiling MDR32F9Qx_timer.c...
 linking...
-Program Size: Code=2808 RO-data=248 RW-data=16 ZI-data=1632  
-".\Objects\MDR32_MELT16S2S.axf" - 0 Error(s), 0 Warning(s).
+Program Size: Code=3220 RO-data=248 RW-data=16 ZI-data=1632  
+".\Objects\MDR32_MELT16S2S.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -64,22 +76,22 @@ Package Vendor: Keil
       Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\MDR32F9Qx_timer.c
 
    * Component: Keil::Drivers:RST_CLK:1.5
-      Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\MDR32F9Qx_rst_clk.c
       Include file:  Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_rst_clk.h
+      Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\MDR32F9Qx_rst_clk.c
 
    * Component: Keil::Drivers:PORT:1.5
-      Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\MDR32F9Qx_port.c
       Include file:  Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h
+      Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\MDR32F9Qx_port.c
 
    * Component: Keil::Device:Startup:1.5
+      Source file:   Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\startup_MDR32F9Qx.s
       Source file:   Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\system_MDR32F9Qx.c
       Include file:  Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\system_MDR32F9Qx.h
       Include file:  Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-      Source file:   Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\startup_MDR32F9Qx.s
       Include file:  Config\MDR32F9Qx_config.h
 
    * Component: ARM::CMSIS:CORE:5.0.1
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>
